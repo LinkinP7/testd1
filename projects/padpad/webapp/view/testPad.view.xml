@@ -1,0 +1,50 @@
+<mvc:View
+    controllerName="padpad.controller.testPad"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+				    	<content>
+                                <Table id="idProductsTable"
+                            inset="false"
+                            items="{bookservice>/Books}">
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="Orders List (m table)" level="H2"/>
+                            </Toolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column>
+                                <Text text="stock" />
+                            </Column>
+                            <Column>
+                                <Text text="price" />
+                            </Column>
+                            <Column>
+                                <Text text="title" />
+                            </Column>
+                            <Column>
+                                <Text text="descr" />
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                <Text text="{bookservice>stock}" />
+                                <Text text="{bookservice>price}" />
+                                <Text text="{bookservice>title}" />
+                                <Text text="{bookservice>descr}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

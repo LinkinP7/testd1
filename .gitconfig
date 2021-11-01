@@ -1,0 +1,8 @@
+[credential]
+	helper = /home/user/.bas-git/bas-git-helper-init.sh
+[user]
+	email = qkrwlstjd3@naver.com
+	name = 진성 박
+[credential "https://github.com"]
+	helper = store
+	helper = /home/user/.bas-git/bas-git-helper.sh

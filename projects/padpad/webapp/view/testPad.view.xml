@@ -30,6 +30,9 @@
                             <Column>
                                 <Text text="descr" />
                             </Column>
+                            <Column>
+                                <Text text="currency_code" />
+                            </Column>
                         </columns>
                         <items>
                             <ColumnListItem>
@@ -38,6 +41,7 @@
                                 <Text text="{bookservice>price}" />
                                 <Text text="{bookservice>title}" />
                                 <Text text="{bookservice>descr}" />
+                                <Text text="{bookservice>currency_code}" />
                                 </cells>
                             </ColumnListItem>
                         </items>

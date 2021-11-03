@@ -1,0 +1,57 @@
+<mvc:View
+    controllerName="freestyle.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:u="sap.ui.unified"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+			    	<content>
+                        <Table id="idProductsTable" inset="false" mode="MultiSelect" selectionChange="onSelectionChange" items="{bookservice>/Books}" updateFinished="onLoad">
+                            <headerToolbar>
+                                <Toolbar>
+                                    <Title text="{i18n>title2}" level="H1"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <columns>
+                                <Column>
+                                    <Text text="title" />
+                                </Column>
+                                <Column>
+                                    <Text text="stock" />
+                                </Column>
+                                <Column>
+                                    <Text text="price" />
+                                </Column>
+                                <Column>
+                                    <Text text="currency_code" />
+                                </Column>
+                                <Column>
+                                    <Text text="descr" />
+                                </Column>
+                                <Column>
+                                    <u:Currency value="{price}" currency="{currency_code}"/>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                    <Text text="{bookservice>title}" />
+                                    <Text text="{bookservice>stock}" />
+                                    <Text text="{bookservice>price}" />
+                                    <Text text="{bookservice>currency_code}" />
+                                    <Text text="{bookservice>descr}" />
+                                    <u:Currency value="{price}" currency="{currency_code}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

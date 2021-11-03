@@ -1,0 +1,6 @@
+{
+  "label": "Run Configurations.configFilesHelper",
+  "level": "error",
+  "message": "readFile: could not parse </home/user/projects/.vscode/launch.json> file content",
+  "time": "2021-11-02T08:16:23.833Z"
+}

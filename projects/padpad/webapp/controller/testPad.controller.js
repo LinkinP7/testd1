@@ -12,8 +12,14 @@ sap.ui.define([
 			onInit: function () {
                     // odata = this.getModel() ??
                     // console.log()
-                    var odata = new JSONModel(this.getOwnerComponent().getModel());
+
+                    var odata = this.getOwnerComponent().getModel();
+
+                    var oModel = new JSONModel(odata);    
                     console.log(odata);
+
+                    this.getView().setModel(oModel); // 바인딩
+                    
                 }   
 		});
 	});

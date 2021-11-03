@@ -11,15 +11,17 @@ sap.ui.define([
 
 		return Controller.extend("freestyle.controller.Main", {
 			onInit: function () {
-                var oModel = this.getOwnerComponent().getModel();
-                    sap.ui.getCore().setModel(oModel);    
+                // var oModel = this.getOwnerComponent().getModel();
+                //     sap.ui.getCore().setModel(oModel);    
             },
             
             onSelectionChange: function(oEvent) {
             var oSelectedItem = oEvent.getParameter("listItem");
-            console.log(oSelectedItem.getBindingContext("bookservice").getObject())
+            console.log(oSelectedItem.getBindingContext("bookservice").getObject("{title}","{price}"))
             var oModel = oSelectedItem.getBindingContext("bookservice").getObject("title");
-            alert(JSON.stringify(oModel));
+            var oModel2 = oSelectedItem.getBindingContext("bookservice").getObject("price");
+            var oModel3 = oSelectedItem.getBindingContext("bookservice").getObject("currency_code");  // 한번에 concat해서 불러오는 방법은 없을까? 
+            alert(JSON.stringify(oModel + " is " + oModel2 + oModel3 + "."));
             }
 		});
 	});

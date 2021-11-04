@@ -8,17 +8,22 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}">
+				<Page id="main" title="{i18n>title}">
 			    	<content>
                         <Table id="idProductsTable" inset="false" mode="MultiSelect" selectionChange="onSelectionChange" items="{bookservice>/Books}" updateFinished="onLoad">
                             <headerToolbar>
                                 <Toolbar>
                                     <Title text="{i18n>title2}" level="H1"/>
+                            
+                                    <ToggleButton icon="sap-icon://activity-2" press="onPress1" />
+                                    <Button icon="sap-icon://cart-approval" press="onPressNextPage" />
+                                    <!-- <Link id="link" text="A link to the sub1 Page"/> -->
+
                                 </Toolbar>
                             </headerToolbar>
                             <columns>
                                 <Column>
-                                    <Text text="title" />
+                                    <Text text="책 제목" />
                                 </Column>
                                 <Column>
                                     <Text text="stock" />
@@ -27,24 +32,20 @@
                                     <Text text="price" />
                                 </Column>
                                 <Column>
-                                    <Text text="currency_code" />
+                                    <Text text="stat" />
                                 </Column>
                                 <Column>
                                     <Text text="descr" />
                                 </Column>
-                                <Column>
-                                    <u:Currency value="{price}" currency="{currency_code}"/>
-                                </Column>
+
                             </columns>
                             <items>
                                 <ColumnListItem>
                                     <cells>
                                     <Text text="{bookservice>title}" />
                                     <Text text="{bookservice>stock}" />
-                                    <Text text="{bookservice>price}" />
-                                    <Text text="{bookservice>currency_code}" />
+                                    <Text text="{bookservice>price} {bookservice>currency_code}" />
                                     <Text text="{bookservice>descr}" />
-                                    <u:Currency value="{price}" currency="{currency_code}"/>
                                     </cells>
                                 </ColumnListItem>
                             </items>

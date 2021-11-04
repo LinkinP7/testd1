@@ -1,7 +1,7 @@
 {
   "_version": "1.32.0",
   "sap.app": {
-    "id": "freestyle",
+    "id": "test",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -42,10 +42,10 @@
   "sap.ui5": {
     "flexEnabled": false,
     "rootView": {
-      "viewName": "freestyle.view.Main",
+      "viewName": "test.view.gridTest",
       "type": "XML",
       "async": true,
-      "id": "Main"
+      "id": "gridTest"
     },
     "dependencies": {
 			"minUI5Version": "1.95.0",
@@ -53,7 +53,8 @@
         "sap.ui.core": {},
         "sap.m": {},
         "sap.ui.layout": {},
-        "sap.f": {}
+        "sap.f": {},
+        "sap.ui.table": {}
       }
     },
     "contentDensities": {
@@ -64,7 +65,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "freestyle.i18n.i18n"
+          "bundleName": "test.i18n.i18n"
         }
       },
 			"bookservice": {
@@ -90,37 +91,25 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "freestyle.view",
+        "viewPath": "test.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "sub1",
-          "pattern": "sub1",
-          "target": "sub_first"
-        },
-        {
-          "name": "main",
-          "pattern": "main",
-          "target": "TargetMain"
+          "name": "RoutegridTest",
+          "pattern": "RoutegridTest",
+          "target": ["TargetgridTest"]
         }
       ],
       "targets": {
-        "TargetMain": {
+        "TargetgridTest": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "main",
-          "viewName": "Main"
-        },
-        "sub_first": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "sub1",
-          "viewName": "sub1"
+          "viewId": "gridTest",
+          "viewName": "gridTest"
         }
       }
     }

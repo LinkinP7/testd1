@@ -1,0 +1,128 @@
+<mvc:View
+	controllerName="test.controller.gridTest"
+	xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified"
+	xmlns:c="sap.ui.core"
+	xmlns:m="sap.m"
+    height="100%">
+	<m:Page
+		showHeader="false"
+		enableScrolling="false"
+		class="sapUiContentPadding">
+		<m:content>
+			<Table
+				rows="{path: '/Books',
+                       parameters: {operationMode: 'Server'}}"
+				selectionMode="MultiToggle"
+				visibleRowCount="7"
+				paste="onPaste"
+				ariaLabelledBy="title"
+                threshold="15"
+				enableBusyIndicator="true">
+				<extension>
+					<m:OverflowToolbar style="Clear">
+						<m:Title id="title" text="Books"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns>
+					<Column width="11rem">
+						<m:Label text="Title Name" />
+						<template>
+							<m:Text text="{bookservice>title}"/>
+						</template>
+					</Column>
+					<Column width="11rem">
+						<m:Label text="Product price" />
+						<template>
+							<u:Currency value="{bookservice>price}" currency="{bookservice>currency_code}"/>
+						</template>
+					</Column>
+					<Column width="11rem">
+						<m:Label text="stock" />
+						<template>
+							<m:Text text="{bookservice>stock}" />
+						</template>
+					</Column>
+					<Column width="17rem">
+						<m:Label text="descr" />
+						<template>
+							<m:Text text="{bookservice>descr}" />
+						</template>
+					</Column>
+					<Column width="9rem">
+						<m:Label text="genre_ID" />
+						<template>
+							<m:Text text="{bookservice>genre_ID}" />
+						</template>
+					</Column>                 
+					<Column width="9rem">
+						<m:Label text="ID" />
+						<template>
+							<m:Text text="{bookservice>ID}" />
+						</template>
+					</Column>  					
+                    <Column width="9rem">
+						<m:Label text="author_ID" />
+						<template>
+							<m:Text text="{bookservice>author_ID}" />
+						</template>
+					</Column>                         
+				</columns>
+			</Table>
+		</m:content>
+	</m:Page>
+</mvc:View>
+
+<!-- <mvc:View
+    controllerName="test.controller.gridTest"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+				   	<content>
+                         <Table id="idProductsTable" inset="false" mode="MultiSelect" items="{bookservice>/Books}" updateFinished="onLoad" >
+                            <headerToolbar>
+                                <Toolbar>
+                                    <Title text="MultiToggle" level="H1"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <columns>
+                                <Column>
+                                    <Text text="title" />
+                                </Column>
+                                <Column>
+                                    <Text text="price" />
+                                </Column>
+                                <Column>
+                                    <Text text="stock" />
+                                </Column>
+                                <Column>
+                                    <Text text="descr" />
+                                </Column>
+                                <Column>
+                                    <Text text="currency_code" />
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                    <Text text="{bookservice>title}" />
+                                    <Text text="{bookservice>price}" />
+                                    <Text text="{bookservice>stock}" />
+                                    <Text text="{bookservice>descr}" />
+                                    <Text text="{bookservice>currency_code}" />
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View> -->

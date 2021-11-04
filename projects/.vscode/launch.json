@@ -1,384 +1,384 @@
 {
-    "configurations": [
-        {
-            "name": "Start testapi",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/testapi",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/testapi\"}"
-            }
-        },
-        {
-            "name": "Start testapi Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/testapi",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/testapi\"}"
-            }
-        },
-        {
-            "name": "Start testapi Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/testapi",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/testapi\"}"
-            }
-        },
-        {
-            "name": "Start sample_test",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/sample_test",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/sample_test\"}"
-            }
-        },
-        {
-            "name": "Start sample_test Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/sample_test",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/sample_test\"}"
-            }
-        },
-        {
-            "name": "Start sample_test Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/sample_test",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/sample_test\"}"
-            }
-        },
-        {
-            "name": "Start test_dynamic",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/test_dynamic",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_dynamic\"}"
-            }
-        },
-        {
-            "name": "Start test_dynamic Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/test_dynamic",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_dynamic\"}"
-            }
-        },
-        {
-            "name": "Start test_dynamic Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/test_dynamic",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_dynamic\"}"
-            }
-        },
-        {
-            "name": "Start padpad",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/padpad",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/padpad\"}"
-            }
-        },
-        {
-            "name": "Start padpad Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/padpad",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/padpad\"}"
-            }
-        },
-        {
-            "name": "Start padpad Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/padpad",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/padpad\"}"
-            }
-        },
-        {
-            "name": "Start test_",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/test_",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_\"}"
-            }
-        },
-        {
-            "name": "Start test_ Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/test_",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_\"}"
-            }
-        },
-        {
-            "name": "Start test_ Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/test_",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_\"}"
-            }
-        },
-        {
-            "name": "Start freestyle",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/freestyle",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/freestyle\"}"
-            }
-        },
-        {
-            "name": "Start freestyle Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/freestyle",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/freestyle\"}"
-            }
-        },
-        {
-            "name": "Start freestyle Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/freestyle",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/freestyle\"}"
-            }
-        }
-    ],
-    "compounds": [],
-    "inputs": [
-        {
-            "id": "UI5Version",
-            "type": "command",
-            "command": "sap.ux.appGenerator.ui5Version"
-        },
-        {
-            "id": "UI5VersionV4",
-            "type": "command",
-            "command": "sap.ux.appGenerator.ui5VersionV4"
-        }
-    ],
-    "version": "0.2.0"
+  "configurations": [
+    {
+      "name": "Start testapi",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/testapi",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/testapi\"}"
+      }
+    },
+    {
+      "name": "Start testapi Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/testapi",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/testapi\"}"
+      }
+    },
+    {
+      "name": "Start testapi Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/testapi",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/testapi\"}"
+      }
+    },
+    {
+      "name": "Start sample_test",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/sample_test",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/sample_test\"}"
+      }
+    },
+    {
+      "name": "Start sample_test Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/sample_test",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/sample_test\"}"
+      }
+    },
+    {
+      "name": "Start sample_test Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/sample_test",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/sample_test\"}"
+      }
+    },
+    {
+      "name": "Start test_dynamic",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/test_dynamic",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_dynamic\"}"
+      }
+    },
+    {
+      "name": "Start test_dynamic Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/test_dynamic",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_dynamic\"}"
+      }
+    },
+    {
+      "name": "Start test_dynamic Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/test_dynamic",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_dynamic\"}"
+      }
+    },
+    {
+      "name": "Start padpad",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/padpad",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/padpad\"}"
+      }
+    },
+    {
+      "name": "Start padpad Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/padpad",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/padpad\"}"
+      }
+    },
+    {
+      "name": "Start padpad Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/padpad",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/padpad\"}"
+      }
+    },
+    {
+      "name": "Start test_",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/test_",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_\"}"
+      }
+    },
+    {
+      "name": "Start test_ Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/test_",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_\"}"
+      }
+    },
+    {
+      "name": "Start test_ Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/test_",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/test_\"}"
+      }
+    },
+    {
+      "name": "Start freestyle",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/freestyle",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/freestyle\"}"
+      }
+    },
+    {
+      "name": "Start freestyle Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/freestyle",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/freestyle\"}"
+      }
+    },
+    {
+      "name": "Start freestyle Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/freestyle",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/freestyle\"}"
+      }
+    }
+  ],
+  "compounds": [],
+  "inputs": [
+    {
+      "id": "UI5Version",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5Version"
+    },
+    {
+      "id": "UI5VersionV4",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5VersionV4"
+    }
+  ],
+  "version": "0.2.0"
 }

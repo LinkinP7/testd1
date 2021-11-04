@@ -1,0 +1,67 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="freestyle.controller.sub1">
+	<Page
+        id="sub1"
+		title="Sub1 Page"
+		showNavButton="true"
+		navButtonPress="onBack">
+		<content>
+			<layout:VerticalLayout>
+				<Button text="To the first Page" press="onToPage1"/>
+			</layout:VerticalLayout>
+                <Table id="idProductsTable" inset="false" mode="MultiSelect" selectionChange="onSelectionChange" items="{bookservice>/Books}" updateFinished="onLoad">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="{i18n>title3}" level="H1"/>
+                        <ToggleButton icon="sap-icon://activity-2" press="onPress1" />
+                        <Button icon="sap-icon://cart-approval" press="onPressNextPage" />
+                        <Button text="To the first Page" press="onToPage1"/>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <Text text="책 제목" />
+                    </Column>
+                    <Column>
+                        <Text text="stock" />
+                    </Column>
+                    <Column>
+                        <Text text="price" />
+                    </Column>
+                    <Column>
+                        <Text text="stat" />
+                    </Column>
+                    <Column>
+                        <Text text="descr" />
+                    </Column>
+
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                        <Text text="{bookservice>title}" />
+                        <Text text="{bookservice>stock}" />
+                        <Text text="{bookservice>price} {bookservice>currency_code}" />
+                        </cells>
+                        <cells>
+                        <Text text="{bookservice>stock}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            <Panel 
+                headerText="Write Anything you want!"
+                class="sapUiResponsiveMargin"
+                width="auto">
+                <Text
+                    text="sum: 100$"
+                    class="sapUiSmallMargin"/> 
+
+                 <Button text="Buy" press="onToPage1"/>
+            </Panel>
+		</content>
+	</Page>
+</mvc:View>
